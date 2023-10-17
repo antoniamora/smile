@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Anton';
+    src: url('Anton-Regular.ttf');
+}
+
+body {
+    background-color: yellow;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+h1, h2 {
+    font-family: 'Anton';
+    font-size: 5em;
+}
+
+h1 {
+    margin: auto;
+}
+
+
+
+.circulo {
+    width: 15em;
+    height: 15em;
+    border: black solid 10px;
+    margin: auto;
+    margin-top: 3em;
+    border-radius: 50%;
+}
+
+.ojo_izquierdo, .ojo_derecho {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: black;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.ojo_izquierdo {
+    margin-left: 4em;
+    margin-top: 4em;
+}
+
+.ojo_derecho {
+    margin-right: 4em;
+    margin-top: -1.4em;
+}
+
+.sonrisa {
+    background-color: transparent;
+    margin: auto;
+    height: 1em;
+    width: 5em;
+    margin-top: 4.5em;
+    border-bottom: 10px solid black; /* Define el borde inferior */
+    border-radius: 0 0 20em 20em;
+    animation: sonrisa 2s infinite;
+}
+
+
+
+@keyframes sonrisa {
+    from {
+        width: 2em;
+        height: 1em;
+        border-bottom: 10px solid black;
+        margin: auto;
+        margin-top: 4.5em;
+        border-radius: 40%;
+        border-radius: 0 0 20em 20em;
+    }
+
+    to {
+        width: 7em;
+        height: 4.5em;
+        border-bottom: black 10px solid;
+        margin: auto;
+        margin-top: 1.5em;
+        border-radius: 40%;
+        border-radius: 0 0 20em 20em;
+    }
+}
+
